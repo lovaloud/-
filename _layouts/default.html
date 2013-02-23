@@ -1,0 +1,32 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset=utf-8 />
+      <title> {% if page.title %} {{ page.title }} | {% endif %} Semi Times, Blogger </title>
+      <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" />
+    </head>
+    <body>
+      <div id="main">
+
+        <header>
+          <h1> Semi Times' Blog </h1>
+
+        <nav role="navigation">
+          <ul>
+            <li><a href="{{ site.baseurl }}/">Home</a></li>
+            <li><a href="#">Gargets</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        </header>
+
+        {{ content }}
+
+        <footer>
+          <p>&copy; Semi Times' Blog 2013 | All Rights Reserved. </p>
+        </footer>
+
+      </div>
+      </body>
+    </html>

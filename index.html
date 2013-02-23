@@ -1,0 +1,23 @@
+---
+layout: default
+title: Home 
+---
+
+<section class="content">
+  <h2>Bury dreams by speaking them aloud</h2>
+
+  <p>Check out my latest blogs below!</p>
+  </section>
+
+  <ul class="entries">
+    {% for post in site.posts %}
+
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        <img src="{{ site.baseurl }}{{ post.image }}" />
+        <h3>{{ post.title }}</h3>
+      </a>
+    </li>
+
+    {% endfor %}
+  </ul>
